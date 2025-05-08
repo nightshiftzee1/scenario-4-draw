@@ -10,6 +10,8 @@ public class canDrag : MonoBehaviour
     public GameObject blade;
     public float rotateSpeed;
 
+    public bool hit;
+
     private Vector3 GetMouseWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
