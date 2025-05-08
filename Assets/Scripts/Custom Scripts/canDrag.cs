@@ -10,7 +10,7 @@ public class canDrag : MonoBehaviour
     public GameObject blade;
     public float rotateSpeed;
 
-    public bool hit;
+    public bool draggable = true;
 
     private Vector3 GetMouseWorldPosition()
     {
@@ -25,8 +25,20 @@ public class canDrag : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        weapon.transform.position = GetMouseWorldPosition() + mousePositionOffset;
+        if (draggable)
+        {
+            weapon.transform.position = GetMouseWorldPosition() + mousePositionOffset;
+        }
+        else
+        {
+            //Do nothing
+        }
 
         blade.transform.Rotate(0, 0, rotateSpeed);
+    }
+
+    public void stopDrag()
+    {
+        draggable = false;
     }
 }

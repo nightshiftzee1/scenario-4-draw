@@ -8,7 +8,7 @@ public class bladeHit : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        canDrag = weapon.GetComponent<canDrag>();
+        weapon.stopDrag();
     }
 
     void OnCollisionExit2D(Collision2D collision)
