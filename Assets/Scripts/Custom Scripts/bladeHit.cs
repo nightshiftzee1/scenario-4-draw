@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class bladeHit : MonoBehaviour
 {
-    public GameObject weapon;
+    public int coins = 0;
 
-    canDrag canDragRef;
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter(Collision collision)
     {
-        canDragRef = weapon.GetComponent<canDrag>();
-        canDragRef.stopDrag();
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
+        if (collision.gameObject.CompareTag("Clash"))
+        {
+            coins = coins + 5;
+            Debug.Log("Coins: " + coins);
+        }
     }
 }
