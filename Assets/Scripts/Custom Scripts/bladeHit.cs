@@ -5,6 +5,7 @@ using UnityEngine;
 public class bladeHit : MonoBehaviour
 {
     public int coins = 0;
+    public GameObject collideWith;
 
     void OnCollisionEnter(Collision collision)
     {
