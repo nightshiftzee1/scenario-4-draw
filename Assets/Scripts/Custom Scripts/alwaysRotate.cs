@@ -12,4 +12,9 @@ public class alwaysRotate : MonoBehaviour
     {
         blade.transform.Rotate(0, 0, rotateSpeed);
     }
+
+    public void faster()
+    {
+        rotateSpeed = rotateSpeed + 1;
+    }
 }

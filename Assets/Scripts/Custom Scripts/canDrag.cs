@@ -39,6 +39,6 @@ public class canDrag : MonoBehaviour
 
     public void stopDrag()
     {
-        draggable = false;
+        rotateSpeed = rotateSpeed + 1;
     }
 }

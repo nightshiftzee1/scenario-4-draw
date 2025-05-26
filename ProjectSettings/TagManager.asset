@@ -9,6 +9,7 @@ TagManager:
   - Coins
   - startButton
   - Enemy
+  - Borders
   layers:
   - Default
   - TransparentFX

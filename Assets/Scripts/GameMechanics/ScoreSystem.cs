@@ -20,6 +20,7 @@ public class ScoreSystem : MonoBehaviour
     /// This method changes the points of a target. It has diffent outcomes for if scoreChange is positive or negative.
     /// Can be used as a health script
     /// </summary>
+    
     public void AdjustPoints(int scoreChange) {
         
         if (scoreChange != 0) {
@@ -43,9 +44,15 @@ public class ScoreSystem : MonoBehaviour
             updateScoreUI.Invoke(currentScore);
         }
 
+    
+       
+           
         
         
     }
+
+        
+        
+ }
     
     
-}
