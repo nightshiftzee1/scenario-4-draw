@@ -8,6 +8,7 @@ TagManager:
   - Clash
   - Coins
   - startButton
+  - Enemy
   layers:
   - Default
   - TransparentFX
